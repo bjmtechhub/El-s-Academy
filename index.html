@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El's Academy Ghana | Quality Preschool & Primary School in Accra</title>
+    <meta name="description" content="El's Academy is a leading preschool and primary school in Ghana, Accra, offering quality education from Creche to Primary 6. Nurturing confident, curious, and compassionate learners rooted in Ghanaian culture.">
+    <meta name="keywords" content="school Ghana, primary school Accra, preschool Ghana, El's Academy">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #c8923a;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #b07a2e;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800 antialiased overflow-x-hidden">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-[#1a5c38] text-white text-xs py-2 px-4 sm:px-6">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-center sm:text-left">
+            <div class="flex items-center gap-2">
+                <span class="bg-[#c8923a] text-white font-bold px-2 py-0.5 rounded text-[10px] tracking-wide uppercase">Notice</span>
+                <span>Enrolment Open for 2025/2026 Academic Year! Creche to Primary 6.</span>
+            </div>
+            <div class="flex items-center gap-6 text-white/90 font-medium">
+                <span class="hidden md:inline-flex items-center gap-1.5"><i class="ri-phone-line text-[#f5d08a]"></i> +233 24 000 0000</span>
+                <span class="hidden lg:inline-flex items-center gap-1.5"><i class="ri-mail-line text-[#f5d08a]"></i> info@elsacademy.edu.gh</span>
+                <span class="inline-flex items-center gap-1.5"><i class="ri-time-line text-[#f5d08a]"></i> Mon – Fri: 7:00am – 4:00pm</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#home" class="flex items-center gap-3 group">
+                <div class="w-11 h-11 rounded-full bg-[#1a5c38] flex items-center justify-center shadow-md shadow-[#1a5c38]/20 group-hover:scale-105 transition-transform duration-300">
+                    <span  class="text-white font-serif font-bold text-xl">E<span>
+                </div>
+                <div>
+                    <h1 class="font-serif font-bold text-xl text-[#111] leading-none tracking-wide">El's Academy</h1>
+                    <p class="text-[#c8923a] text-[11px] font-semibold uppercase tracking-wider mt-0.5">Accra, Ghana</p>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center gap-8">
+                <a href="#home" class="text-sm font-semibold text-[#1a5c38] hover:text-[#c8923a] transition-colors duration-200">Home</a>
+                <a href="#about" class="text-sm font-medium text-gray-600 hover:text-[#c8923a] transition-colors duration-200">About Us</a>
+                <a href="#programs" class="text-sm font-medium text-gray-600 hover:text-[#c8923a] transition-colors duration-200">Our Programmes</a>
+                <a href="#teachers" class="text-sm font-medium text-gray-600 hover:text-[#c8923a] transition-colors duration-200">Teachers</a>
+                <a href="#gallery" class="text-sm font-medium text-gray-600 hover:text-[#c8923a] transition-colors duration-200">Gallery</a>
+                <a href="#contact" class="text-sm font-medium text-gray-600 hover:text-[#c8923a] transition-colors duration-200">Contact Us</a>
+            </nav>
+
+            <!-- CTA Button -->
+            <div class="hidden lg:flex items-center">
+                <a href="#contact" class="bg-[#c8923a] text-white px-6 py-2.5 rounded-full font-semibold text-sm shadow-md hover:bg-[#b07a2e] transform hover:-translate-y-0.5 transition-all duration-200">
+                    Apply Now
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="mobile-menu-toggle" class="md:hidden text-gray-700 hover:text-[#1a5c38] p-2 focus:outline-none cursor-pointer" aria-label="Toggle Menu">
+                <i class="ri-menu-line text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Nav Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-gray-100 px-6 py-6 space-y-4 shadow-lg animate-fadeIn">
+            <a href="#home" class="block text-base font-semibold text-[#1a5c38] py-1">Home</a>
+            <a href="#about" class="block text-base font-medium text-gray-700 py-1">About Us</a>
+            <a href="#programs" class="block text-base font-medium text-gray-700 py-1">Our Programmes</a>
+            <a href="#teachers" class="block text-base font-medium text-gray-700 py-1">Teachers</a>
+            <a href="#gallery" class="block text-base font-medium text-gray-700 py-1">Gallery</a>
+            <a href="#contact" class="block text-base font-medium text-gray-700 py-1">Contact Us</a>
+            <div class="pt-4 border-t border-gray-100">
+                <a href="#contact" class="inline-block w-full text-center bg-[#c8923a] text-white px-6 py-3 rounded-full font-semibold text-sm shadow-md hover:bg-[#b07a2e] transition-colors">
+                    Apply Now
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="relative pt-12 pb-32 md:py-40 bg-[#fef8ee] overflow-hidden">
+        <!-- Background Decorative Elements -->
+        <div class="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none">
+            <div class="absolute top-10 right-10 w-96 h-96 rounded-full bg-[#1a5c38] blur-3xl"></div>
+            <div class="absolute bottom-10 right-40 w-80 h-80 rounded-full bg-[#c8923a] blur-3xl"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Hero Left Content -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 bg-[#1a5c38]/10 rounded-full text-[#1a5c38] font-semibold text-xs tracking-wider uppercase animate-pulse">
+                        <i class="ri-award-fill text-[#c8923a]"></i> Top-Rated School in Accra, Ghana
+                    </div>
+
+                    <h2 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-[1.15]">
+                        Nurturing Tomorrow's <br class="hidden sm:inline">
+                        <span class="text-[#1a5c38]">Leaders</span> in Accra, Ghana
+                    </h2>
+
+                    <p class="text-gray-600 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        Welcome to El's Academy, where quality preschool and primary education meets rich Ghanaian culture. We develop confident, curious, and well-rounded children ready to excel.
+                    </p>
+
+                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#contact" class="px-8 py-4 bg-[#c8923a] hover:bg-[#b07a2e] text-white font-semibold rounded-full shadow-lg shadow-[#c8923a]/30 transform hover:-translate-y-1 transition-all duration-200 flex items-center gap-2 cursor-pointer text-base">
+                            Enrol Your Child <i class="ri-arrow-right-line"></i>
+                        </a>
+                        <a href="#programs" class="px-8 py-4 bg-white hover:bg-gray-50 text-gray-800 font-semibold rounded-full border border-gray-200 shadow-sm transform hover:-translate-y-1 transition-all duration-200 flex items-center gap-2 cursor-pointer text-base">
+                            Discover Programmes <i class="ri-book-read-line text-[#1a5c38]"></i>
+                        </a>
+                    </div>
+
+                    <div class="pt-8 flex items-center justify-center lg:justify-start gap-8 text-left">
+                        <div class="border-l-2 border-[#c8923a] pl-4">
+                            <h4 class="font-serif font-bold text-2xl text-gray-900">Creche - P6</h4>
+                            <p class="text-xs font-medium text-gray-500 uppercase tracking-wider">Ages 1 to 11 Years</p>
+                        </div>
+                        <div class="border-l-2 border-[#1a5c38] pl-4">
+                            <h4 class="font-serif font-bold text-2xl text-gray-900">15:1</h4>
+                            <p class="text-xs font-medium text-gray-500 uppercase tracking-wider">Student-Teacher Ratio</p>
+                        </div>
+                        <div class="border-l-2 border-[#c8923a] pl-4">
+                            <h4 class="font-serif font-bold text-2xl text-gray-900">100%</h4>
+                            <p class="text-xs font-medium text-gray-500 uppercase tracking-wider">Safe Campus</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Right Image Collage -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <!-- Main large image -->
+                        <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white aspect-[4/5] bg-gray-100 transform hover:scale-[1.02] transition-transform duration-500">
+                            <img src="images/young speech.jpg" alt="Students learning happily in class" class="w-full h-full object-cover object-center">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-6">
+                                <p class="text-white font-serif font-bold text-xl">Inspiring curiosity & passion every single day.</p>
+                            </div>
+                        </div>
+
+                        <!-- Overlapping badge card -->
+                        <div class="absolute -bottom-8 -left-8 bg-white p-5 rounded-2xl shadow-xl border border-gray-100 hidden sm:flex items-center gap-4 animate-bounce hover:pause" style="animation-duration: 4s;">
+                            <div class="w-12 h-12 rounded-full bg-[#1a5c38]/10 text-[#1a5c38] flex items-center justify-center flex-shrink-0 text-2xl font-bold">
+                                🇬🇭
+                            </div>
+                            <div>
+                                <h5 class="font-serif font-bold text-sm text-gray-900">Ghanaian Heritage</h5>
+                                <p class="text-xs text-gray-500">Culture, language & values</p>
+                            </div>
+                        </div>
+
+                        <!-- Overlapping badge card 2 -->
+                        <div class="absolute -top-6 -right-6 bg-white p-4 rounded-2xl shadow-xl border border-gray-100 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-[#c8923a]/10 text-[#c8923a] flex items-center justify-center text-xl">
+                                <i class="ri-book-mark-fill"></i>
+                            </div>
+                            <div>
+                                <h5 class="font-serif font-bold text-xs text-gray-900">Holistic STEM</h5>
+                                <p class="text-[10px] text-gray-500">Future-ready skills</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURE HIGHLIGHT CARDS -->
+    <section class="relative z-20 -mt-20 max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Card 1 -->
+            <div class="bg-white rounded-2xl p-8 shadow-xl border border-gray-100 transform hover:-translate-y-2 transition-transform duration-300">
+                <div class="w-14 h-14 rounded-2xl bg-[#1a5c38]/10 flex items-center justify-center text-[#1a5c38] mb-6 shadow-inner">
+                    <i class="ri-lightbulb-flash-line text-3xl"></i>
+                </div>
+                <h3 class="font-serif font-bold text-xl text-gray-900 mb-3">Holistic Curriculum</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                    Combining rigorous foundational academics with creative arts, STEM early learning, phonics, and critical problem-solving skills.
+                </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white rounded-2xl p-8 shadow-xl border border-gray-100 transform hover:-translate-y-2 transition-transform duration-300">
+                <div class="w-14 h-14 rounded-2xl bg-[#c8923a]/10 flex items-center justify-center text-[#c8923a] mb-6 shadow-inner">
+                    <i class="ri-global-line text-3xl"></i>
+                </div>
+                <h3 class="font-serif font-bold text-xl text-gray-900 mb-3">Ghanaian Culture Rooted</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                    Deeply grounded in indigenous Ghanaian values, heritage appreciation, local languages, and mutual respect for diversity.
+                </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white rounded-2xl p-8 shadow-xl border border-gray-100 transform hover:-translate-y-2 transition-transform duration-300">
+                <div class="w-14 h-14 rounded-2xl bg-[#1a5c38]/10 flex items-center justify-center text-[#1a5c38] mb-6 shadow-inner">
+                    <i class="ri-shield-user-line text-3xl"></i>
+                </div>
+                <h3 class="font-serif font-bold text-xl text-gray-900 mb-3">Safe & Nurturing</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                    A secure, modern campus featuring certified child educators, hygienic facilities, sick bay, and positive behavior support.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-24 md:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+                
+                <!-- About Image Gallery -->
+                <div class="lg:col-span-6 grid grid-cols-2 gap-4 relative">
+                    <div class="space-y-4">
+                        <div class="rounded-2xl overflow-hidden shadow-lg aspect-square bg-gray-100">
+                            <img src="images/briliant minds.jpg" alt="Students in library" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="rounded-2xl overflow-hidden shadow-lg aspect-[4/3] bg-gray-100">
+                            <img src="images/color work.jpg" alt="Teacher helping student" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                        </div>
+                    </div>
+                    <div class="space-y-4 pt-8">
+                        <div class="rounded-2xl overflow-hidden shadow-lg aspect-[4/3] bg-gray-100">
+                            <img src="images/cadet system.jpg" alt="Children playing outdoors" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="rounded-2xl overflow-hidden shadow-lg aspect-square bg-[#1a5c38] p-8 flex flex-col justify-center text-white">
+                            <i class="ri-double-quotes-l text-4xl text-[#f5d08a] mb-2"></i>
+                            <p class="font-serif font-medium text-lg leading-snug">"Education is the most powerful weapon which you can use to change the world."</p>
+                            <p class="text-xs text-[#f5d08a] font-bold tracking-wider uppercase mt-4">— Nelson Mandela</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About Text Content -->
+                <div class="lg:col-span-6 space-y-8">
+                    <div>
+                        <span class="text-[#c8923a] text-xs font-bold tracking-widest uppercase mb-3 block">Why Choose Us</span>
+                        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-gray-900 leading-tight">
+                            Why El's Academy is the Right Choice for Your Child
+                        </h2>
+                    </div>
+
+                    <p class="text-gray-600 text-base leading-relaxed">
+                        At El's Academy, we recognize that the foundational years of a child's life are the most critical. Located in the serene and accessible heart of Accra, Ghana, our academy provides an exceptional blend of world-class academic instruction and vibrant cultural orientation.
+                    </p>
+
+                    <!-- Philosophy, Mission, Values Accordion / Tabs style listing -->
+                    <div class="space-y-6 pt-2">
+                        <!-- Philosophy -->
+                        <div class="flex gap-4 items-start">
+                            <div class="w-10 h-10 rounded-xl bg-[#1a5c38]/10 text-[#1a5c38] flex items-center justify-center flex-shrink-0 mt-1 font-bold text-lg">
+                                01
+                            </div>
+                            <div>
+                                <h4 class="font-serif font-bold text-lg text-gray-900 mb-1">Our Philosophy</h4>
+                                <p class="text-gray-600 text-sm leading-relaxed">We believe every child is uniquely gifted. Our personalized, play-based early learning and interactive primary approaches ensure active participation and enduring confidence.</p>
+                            </div>
+                        </div>
+
+                        <!-- Mission -->
+                        <div class="flex gap-4 items-start">
+                            <div class="w-10 h-10 rounded-xl bg-[#c8923a]/10 text-[#c8923a] flex items-center justify-center flex-shrink-0 mt-1 font-bold text-lg">
+                                02
+                            </div>
+                            <div>
+                                <h4 class="font-serif font-bold text-lg text-gray-900 mb-1">Our Mission</h4>
+                                <p class="text-gray-600 text-sm leading-relaxed">To deliver an excellent foundational education that nurtures intellectual curiosity, moral integrity, physical wellness, and social responsibility in tomorrow's leaders.</p>
+                            </div>
+                        </div>
+
+                        <!-- Core Values -->
+                        <div class="flex gap-4 items-start">
+                            <div class="w-10 h-10 rounded-xl bg-[#1a5c38]/10 text-[#1a5c38] flex items-center justify-center flex-shrink-0 mt-1 font-bold text-lg">
+                                03
+                            </div>
+                            <div>
+                                <h4 class="font-serif font-bold text-lg text-gray-900 mb-1">Core Values</h4>
+                                <p class="text-gray-600 text-sm leading-relaxed">Excellence, Integrity, Compassion, Innovation, and Respect for our rich Ghanaian traditions and global perspectives.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-4">
+                        <a href="#contact" class="inline-flex items-center gap-2 font-semibold text-sm text-[#1a5c38] hover:text-[#c8923a] transition-colors group">
+                            Schedule a Campus Tour Today <i class="ri-arrow-right-line transform group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROGRAMMES SECTION -->
+    <section id="programs" class="py-24 md:py-32 bg-[#fef8ee]">
+        <div class="max-w-7xl mx-auto px-6">
+            <!-- Section Header -->
+            <div class="max-w-3xl mx-auto text-center mb-16 space-y-4">
+                <span class="text-[#c8923a] text-xs font-bold tracking-widest uppercase block">Our Curriculum</span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-gray-900 leading-tight">
+                    Our Academic Programmes
+                </h2>
+                <p class="text-gray-600 text-base leading-relaxed">
+                    Comprehensive learning pathways tailored for every developmental stage, from Creche to Primary 6. We ensure a seamless transition and continuous growth.
+                </p>
+            </div>
+
+            <!-- Programmes Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Programme 1: Creche & Nursery -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 flex flex-col justify-between transform hover:-translate-y-2 transition-all duration-300 group">
+                    <div>
+                        <div class="relative h-48 bg-gray-200 overflow-hidden">
+                            <img src="images/colors day.jpg" alt="Creche children playing" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute top-4 right-4 bg-[#c8923a] text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
+                                Ages 1 - 3
+                            </div>
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <div class="flex items-center justify-between">
+                                <h3 class="font-serif font-bold text-xl text-gray-900">Creche & Nursery</h3>
+                                <i class="ri-bear-smile-line text-2xl text-[#1a5c38]"></i>
+                            </div>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Nurturing early sensory development, basic motor skills, social interaction, vocabulary building, and joyful play-based exploration.
+                            </p>
+                            <div class="pt-2 border-t border-gray-100 space-y-2 text-xs text-gray-500">
+                                <div class="flex items-center gap-2"><i class="ri-check-line text-[#c8923a]"></i> Sensory & Tactile Play</div>
+                                <div class="flex items-center gap-2"><i class="ri-check-line text-[#c8923a]"></i> Potty Training Assistance</div>
+                                <div class="flex items-center gap-2"><i class="ri-check-line text-[#c8923a]"></i> Storytelling & Nursery Rhymes</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="#contact" class="block text-center w-full py-2.5 bg-gray-50 hover:bg-[#1a5c38] text-[#1a5c38] hover:text-white font-semibold rounded-xl text-sm transition-colors border border-gray-200 hover:border-transparent cursor-pointer">
+                            Enquire About Creche
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Programme 2: Kindergarten -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 flex flex-col justify-between transform hover:-translate-y-2 transition-all duration-300 group">
+                    <div>
+                        <div class="relative h-48 bg-gray-200 overflow-hidden">
+                            <img src="images/activity time.jpg" alt="Kindergarten children doing artwork" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute top-4 right-4 bg-[#1a5c38] text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
+                                Ages 4 - 5
+                            </div>
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <div class="flex items-center justify-between">
+                                <h3 class="font-serif font-bold text-xl text-gray-900">Kindergarten (KG 1 & 2)</h3>
+                                <i class="ri-palette-line text-2xl text-[#c8923a]"></i>
+                            </div>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Phonics mastery, early numeracy, creative arts, structured teamwork, and cognitive preparation for primary education.
+                            </p>
+                            <div class="pt-2 border-t border-gray-100 space-y-2 text-xs text-gray-500">
+                                <div class="flex items-center gap-2"><i class="ri-check-line text-[#c8923a]"></i> Jolly Phonics & Reading Start</div>
+                                <div class="flex items-center gap-2"><i class="ri-check-line text-[#c8923a]"></i> Early Math & Shapes</div>
+                                <div class="flex items-center gap-2"><i class="ri-check-line text-[#c8923a]"></i> Ghanaian Culture Exploration</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="#contact" class="block text-center w-full py-2.5 bg-gray-50 hover:bg-[#1a5c38] text-[#1a5c38] hover:text-white font-semibold rounded-xl text-sm transition-colors border border-gray-200 hover:border-transparent cursor-pointer">
+                            Enquire About KG
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Programme 3: Lower Primary -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 flex flex-col justify-between transform hover:-translate-y-2 transition-all duration-300 group">
+                    <div>
+                        <div class="relative h-48 bg-gray-200 overflow-hidden">
+                            <img src="images/fun days.jpg" alt="Lower primary reading" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute top-4 right-4 bg-[#c8923a] text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
+                                Ages 6 - 8
+                            </div>
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <div class="flex items-center justify-between">
+                                <h3 class="font-serif font-bold text-xl text-gray-900">Lower Primary (P1 - P3)</h3>
+                                <i class="ri-book-open-line text-2xl text-[#1a5c38]"></i>
+                            </div>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Building strong literacy, mathematics, introductory science, computing basics, Ghanaian language studies, and physical health.
+                            </p>
+                            <div class="pt-2 border-t border-gray-100 space-y-2 text-xs text-gray-500">
+                                <div class="flex items-center gap-2"><i class="ri-check-line text-[#c8923a]"></i> Grammar & Creative Writing</div>
+                                <div class="flex items-center gap-2"><i class="ri-check-line text-[#c8923a]"></i> ICT & Basic Computing</div>
+                                <div class="flex items-center gap-2"><i class="ri-check-line text-[#c8923a]"></i> Moral & Character Education</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="#contact" class="block text-center w-full py-2.5 bg-gray-50 hover:bg-[#1a5c38] text-[#1a5c38] hover:text-white font-semibold rounded-xl text-sm transition-colors border border-gray-200 hover:border-transparent cursor-pointer">
+                            Enquire About Lower Pri
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Programme 4: Upper Primary -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 flex flex-col justify-between transform hover:-translate-y-2 transition-all duration-300 group">
+                    <div>
+                        <div class="relative h-48 bg-gray-200 overflow-hidden">
+                            <img src="images/tradi 4.jpg" alt="Upper primary student" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute top-4 right-4 bg-[#1a5c38] text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
+                                Ages 9 - 11
+                            </div>
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <div class="flex items-center justify-between">
+                                <h3 class="font-serif font-bold text-xl text-gray-900">Upper Primary (P4 - P6)</h3>
+                                <i class="ri-graduation-cap-line text-2xl text-[#c8923a]"></i>
+                            </div>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Rigorous core academic preparation, advanced STEM projects, BECE foundation readiness, debate, leadership development, and sports.
+                            </p>
+                            <div class="pt-2 border-t border-gray-100 space-y-2 text-xs text-gray-500">
+                                <div class="flex items-center gap-2"><i class="ri-check-line text-[#c8923a]"></i> Advanced Math & Science Lab</div>
+                                <div class="flex items-center gap-2"><i class="ri-check-line text-[#c8923a]"></i> Junior Leadership & Debate</div>
+                                <div class="flex items-center gap-2"><i class="ri-check-line text-[#c8923a]"></i> High School Transition Prep</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="#contact" class="block text-center w-full py-2.5 bg-gray-50 hover:bg-[#1a5c38] text-[#1a5c38] hover:text-white font-semibold rounded-xl text-sm transition-colors border border-gray-200 hover:border-transparent cursor-pointer">
+                            Enquire About Upper Pri
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- MEET OUR TEACHERS SECTION -->
+    <section id="teachers" class="py-24 md:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <!-- Section Header -->
+            <div class="max-w-3xl mx-auto text-center mb-16 space-y-4">
+                <span class="text-[#c8923a] text-xs font-bold tracking-widest uppercase block">Our Staff</span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-gray-900 leading-tight">
+                    Passionate Educators & Leaders
+                </h2>
+                <p class="text-gray-600 text-base leading-relaxed">
+                    Our certified teachers bring years of pedagogical expertise, warmth, and dedication to every classroom, ensuring individual care for every student.
+                </p>
+            </div>
+
+            <!-- Teachers Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Teacher 1 -->
+                <div class="bg-gray-50 rounded-2xl p-6 text-center shadow-sm hover:shadow-md transition-shadow group">
+                    <div class="relative w-36 h-36 mx-auto mb-6 rounded-full overflow-hidden border-4 border-white shadow-md">
+                        <img src="images/tradi.teacher 3.jpg" alt="Mrs. Gladys Mensah" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <h3 class="font-serif font-bold text-xl text-gray-900 mb-1">Mrs. Gladys Mensah</h3>
+                    <p class="text-[#c8923a] font-semibold text-xs uppercase tracking-wider mb-3">Headmistress / Principal</p>
+                    <p class="text-gray-600 text-xs leading-relaxed mb-4">
+                        20+ years of distinguished experience in educational management, early childhood education, and school governance.
+                    </p>
+                    <div class="flex justify-center gap-3 text-gray-400">
+                        <a href="#contact" class="hover:text-[#1a5c38]"><i class="ri-linkedin-fill"></i></a>
+                        <a href="#contact" class="hover:text-[#1a5c38]"><i class="ri-mail-line"></i></a>
+                    </div>
+                </div>
+
+                <!-- Teacher 2 -->
+                <div class="bg-gray-50 rounded-2xl p-6 text-center shadow-sm hover:shadow-md transition-shadow group">
+                    <div class="relative w-36 h-36 mx-auto mb-6 rounded-full overflow-hidden border-4 border-white shadow-md">
+                        <img src="images/tradi.teacher 2.jpg" alt="Mr. Kwame Osei" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <h3 class="font-serif font-bold text-xl text-gray-900 mb-1">Mr. Kwame Osei</h3>
+                    <p class="text-[#1a5c38] font-semibold text-xs uppercase tracking-wider mb-3">Head of Upper Primary & STEM</p>
+                    <p class="text-gray-600 text-xs leading-relaxed mb-4">
+                        Passionate science educator dedicated to fostering critical thinking, inquiry-based learning, and mathematics mastery.
+                    </p>
+                    <div class="flex justify-center gap-3 text-gray-400">
+                        <a href="#contact" class="hover:text-[#1a5c38]"><i class="ri-linkedin-fill"></i></a>
+                        <a href="#contact" class="hover:text-[#1a5c38]"><i class="ri-mail-line"></i></a>
+                    </div>
+                </div>
+
+                <!-- Teacher 3 -->
+                <div class="bg-gray-50 rounded-2xl p-6 text-center shadow-sm hover:shadow-md transition-shadow group">
+                    <div class="relative w-36 h-36 mx-auto mb-6 rounded-full overflow-hidden border-4 border-white shadow-md">
+                        <img src="images/tradi.teacher 1.jpg" alt="Ms. Adwoa Nyarko" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <h3 class="font-serif font-bold text-xl text-gray-900 mb-1">Ms. Adwoa Nyarko</h3>
+                    <p class="text-[#c8923a] font-semibold text-xs uppercase tracking-wider mb-3">Early Childhood Coordinator</p>
+                    <p class="text-gray-600 text-xs leading-relaxed mb-4">
+                        Specializes in Jolly Phonics, sensory integration, and creating vibrant, loving environments for young learners.
+                    </p>
+                    <div class="flex justify-center gap-3 text-gray-400">
+                        <a href="#contact" class="hover:text-[#1a5c38]"><i class="ri-linkedin-fill"></i></a>
+                        <a href="#contact" class="hover:text-[#1a5c38]"><i class="ri-mail-line"></i></a>
+                    </div>
+                </div>
+
+                <!-- Teacher 4 -->
+                <div class="bg-gray-50 rounded-2xl p-6 text-center shadow-sm hover:shadow-md transition-shadow group">
+                    <div class="relative w-36 h-36 mx-auto mb-6 rounded-full overflow-hidden border-4 border-white shadow-md">
+                        <img src="images/dedicated staff.jpg" alt="Mr. David Anim" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <h3 class="font-serif font-bold text-xl text-gray-900 mb-1">Mr. David Anim</h3>
+                    <p class="text-[#1a5c38] font-semibold text-xs uppercase tracking-wider mb-3">Sports & Cultural Arts Director</p>
+                    <p class="text-gray-600 text-xs leading-relaxed mb-4">
+                        Championing physical fitness, teamwork, traditional Ghanaian drumming, dance, and creative drama expression.
+                    </p>
+                    <div class="flex justify-center gap-3 text-gray-400">
+                        <a href="#contact" class="hover:text-[#1a5c38]"><i class="ri-linkedin-fill"></i></a>
+                        <a href="#contact" class="hover:text-[#1a5c38]"><i class="ri-mail-line"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SCHOOL GALLERY SECTION -->
+    <section id="gallery" class="py-24 md:py-32 bg-[#fef8ee]">
+        <div class="max-w-7xl mx-auto px-6">
+            <!-- Section Header -->
+            <div class="flex flex-col md:flex-row items-center justify-between gap-8 mb-12">
+                <div>
+                    <span class="text-[#c8923a] text-xs font-bold tracking-widest uppercase block mb-2">Campus Life</span>
+                    <h2 class="font-serif text-3xl sm:text-5xl font-bold text-gray-900 leading-tight">
+                        School Gallery
+                    </h2>
+                </div>
+
+                <!-- Category Filters -->
+                <div class="flex flex-wrap gap-2 justify-center md:justify-end">
+                    <button class="gallery-filter-btn active px-5 py-2 rounded-full text-xs font-semibold transition-all duration-200 bg-[#1a5c38] text-white" data-category="all">
+                        All Photos
+                    </button>
+                    <button class="gallery-filter-btn px-5 py-2 rounded-full text-xs font-semibold transition-all duration-200 bg-white text-gray-600 hover:bg-gray-100 shadow-sm" data-category="classroom">
+                        Classrooms
+                    </button>
+                    <button class="gallery-filter-btn px-5 py-2 rounded-full text-xs font-semibold transition-all duration-200 bg-white text-gray-600 hover:bg-gray-100 shadow-sm" data-category="culture">
+                        Culture & Arts
+                    </button>
+                    <button class="gallery-filter-btn px-5 py-2 rounded-full text-xs font-semibold transition-all duration-200 bg-white text-gray-600 hover:bg-gray-100 shadow-sm" data-category="sports">
+                        Sports & Play
+                    </button>
+                </div>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-card group relative rounded-2xl overflow-hidden shadow-md aspect-[4/3] cursor-pointer bg-gray-200" data-category="classroom">
+                    <img src="images/choreography.jpg" alt="Classroom Interactive Learning" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-xs font-semibold text-[#f5d08a] uppercase tracking-widest mb-1">Classrooms</span>
+                        <p class="text-white font-serif font-bold text-lg leading-snug">Interactive Primary Science Session</p>
+                    </div>
+                    <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="w-9 h-9 flex items-center justify-center bg-white/20 backdrop-blur-sm rounded-full text-white">
+                            <i class="ri-zoom-in-line text-lg"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="gallery-card group relative rounded-2xl overflow-hidden shadow-md aspect-[4/3] cursor-pointer bg-gray-200" data-category="culture">
+                    <img src="images/choreography2.jpg" alt="Ghanaian Cultural Day" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-xs font-semibold text-[#f5d08a] uppercase tracking-widest mb-1">Culture & Arts</span>
+                        <p class="text-white font-serif font-bold text-lg leading-snug">Traditional Heritage Festival Display</p>
+                    </div>
+                    <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="w-9 h-9 flex items-center justify-center bg-white/20 backdrop-blur-sm rounded-full text-white">
+                            <i class="ri-zoom-in-line text-lg"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="gallery-card group relative rounded-2xl overflow-hidden shadow-md aspect-[4/3] cursor-pointer bg-gray-200" data-category="sports">
+                    <img src="images/choreography3.jpg" alt="Sports and outdoor games" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-xs font-semibold text-[#f5d08a] uppercase tracking-widest mb-1">Sports & Play</span>
+                        <p class="text-white font-serif font-bold text-lg leading-snug">Annual Athletics & Sports Gala</p>
+                    </div>
+                    <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="w-9 h-9 flex items-center justify-center bg-white/20 backdrop-blur-sm rounded-full text-white">
+                            <i class="ri-zoom-in-line text-lg"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="gallery-card group relative rounded-2xl overflow-hidden shadow-md aspect-[4/3] cursor-pointer bg-gray-200" data-category="classroom">
+                    <img src="images/christmas preschool.jpg" alt="Library reading session" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-xs font-semibold text-[#f5d08a] uppercase tracking-widest mb-1">Classrooms</span>
+                        <p class="text-white font-serif font-bold text-lg leading-snug">Well-Stocked Modern Library Reading</p>
+                    </div>
+                    <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="w-9 h-9 flex items-center justify-center bg-white/20 backdrop-blur-sm rounded-full text-white">
+                            <i class="ri-zoom-in-line text-lg"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5 -->
+                <div class="gallery-card group relative rounded-2xl overflow-hidden shadow-md aspect-[4/3] cursor-pointer bg-gray-200" data-category="classroom">
+                    <img src="images/color work.jpg" alt="Nursery Play Area" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-xs font-semibold text-[#f5d08a] uppercase tracking-widest mb-1">Classrooms</span>
+                        <p class="text-white font-serif font-bold text-lg leading-snug">Vibrant Nursery & Creche Playroom</p>
+                    </div>
+                    <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="w-9 h-9 flex items-center justify-center bg-white/20 backdrop-blur-sm rounded-full text-white">
+                            <i class="ri-zoom-in-line text-lg"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6 -->
+                <div class="gallery-card group relative rounded-2xl overflow-hidden shadow-md aspect-[4/3] cursor-pointer bg-gray-200" data-category="culture">
+                    <img src="images/interaction.jpg" alt="Art and craft exhibition" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-xs font-semibold text-[#f5d08a] uppercase tracking-widest mb-1">Culture & Arts</span>
+                        <p class="text-white font-serif font-bold text-lg leading-snug">Pupils Creative Art & Craft Exhibition</p>
+                    </div>
+                    <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="w-9 h-9 flex items-center justify-center bg-white/20 backdrop-blur-sm rounded-full text-white">
+                            <i class="ri-zoom-in-line text-lg"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lightbox Modal Pop-up -->
+        <div id="lightbox-modal" class="fixed inset-0 z-50 bg-black/90 hidden items-center justify-center p-4 backdrop-blur-sm animate-fadeIn">
+            <button id="lightbox-close" class="absolute top-6 right-6 text-white text-3xl cursor-pointer w-12 h-12 flex items-center justify-center bg-white/10 rounded-full hover:bg-white/20 transition-colors">
+                <i class="ri-close-line"></i>
+            </button>
+            <img id="lightbox-img" src="" alt="Gallery Preview" class="max-w-full max-h-[85vh] rounded-2xl object-contain shadow-2xl">
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="py-24 md:py-32 bg-[#1a5c38] overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+                
+                <!-- Left Title -->
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="text-[#f5d08a] text-xs font-bold tracking-widest uppercase block">What Parents Say</span>
+                    <h2 class="font-serif text-4xl sm:text-5xl font-bold text-white leading-tight">
+                        Voices from Our <br>
+                        <span class="text-[#f5d08a]">Community</span>
+                    </h2>
+                    <p class="text-white/80 text-sm leading-relaxed max-w-md">
+                        Nothing speaks louder than the words of parents and students who experience El's Academy every day. Here is what our vibrant community shares.
+                    </p>
+
+                    <!-- Testimonial indicators / dots -->
+                    <div class="flex items-center gap-2 pt-2">
+                        <button class="testi-dot active w-8 h-2.5 bg-[#c8923a] rounded-full transition-all duration-300 cursor-pointer" data-index="0"></button>
+                        <button class="testi-dot w-2.5 h-2.5 bg-white/30 hover:bg-white/60 rounded-full transition-all duration-300 cursor-pointer" data-index="1"></button>
+                        <button class="testi-dot w-2.5 h-2.5 bg-white/30 hover:bg-white/60 rounded-full transition-all duration-300 cursor-pointer" data-index="2"></button>
+                        <button class="testi-dot w-2.5 h-2.5 bg-white/30 hover:bg-white/60 rounded-full transition-all duration-300 cursor-pointer" data-index="3"></button>
+                        <button class="testi-dot w-2.5 h-2.5 bg-white/30 hover:bg-white/60 rounded-full transition-all duration-300 cursor-pointer" data-index="4"></button>
+                    </div>
+
+                    <!-- Navigation Arrows -->
+                    <div class="flex gap-3 pt-4">
+                        <button id="testi-prev" class="w-11 h-11 flex items-center justify-center rounded-full border border-white/30 text-white hover:bg-white/10 transition-colors cursor-pointer">
+                            <i class="ri-arrow-left-line text-lg"></i>
+                        </button>
+                        <button id="testi-next" class="w-11 h-11 flex items-center justify-center rounded-full bg-[#c8923a] text-white hover:bg-[#b07a2e] transition-colors cursor-pointer">
+                            <i class="ri-arrow-right-line text-lg"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right Testimonial Card Display -->
+                <div class="lg:col-span-7">
+                    <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-8 sm:p-12 relative shadow-2xl">
+                        <!-- Rating Stars -->
+                        <div class="flex gap-1 mb-6 text-[#f5d08a] text-lg">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                        </div>
+
+                        <!-- Quote Text -->
+                        <p id="testi-quote" class="text-white text-lg sm:text-xl leading-relaxed italic mb-10 font-serif min-h-[140px] flex items-center">
+                            “El's Academy has completely transformed my son. He came in shy and unsure of himself, and now he stands up in front of the whole school and speaks with such confidence. The teachers here genuinely care about every single child.”
+                        </p>
+
+                        <!-- Author details -->
+                        <div class="flex items-center gap-5 pt-8 border-t border-white/20">
+                            <div id="testi-avatar" class="w-14 h-14 rounded-full bg-[#c8923a] flex items-center justify-center flex-shrink-0 text-white font-serif font-bold text-lg shadow-md">
+                                AB
+                            </div>
+                            <div>
+                                <h4 id="testi-name" class="text-white font-bold text-base">Akosua Boateng</h4>
+                                <p id="testi-role" class="text-white/70 text-xs mt-1">Parent of Kwame, Class 4</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Statistics strip -->
+                    <div class="grid grid-cols-3 gap-4 mt-6">
+                        <div class="bg-white/10 rounded-2xl p-5 text-center backdrop-blur-sm border border-white/10">
+                            <p class="text-white font-serif font-bold text-2xl sm:text-3xl">4.9</p>
+                            <p class="text-white/60 text-xs mt-1">Average Rating</p>
+                        </div>
+                        <div class="bg-white/10 rounded-2xl p-5 text-center backdrop-blur-sm border border-white/10">
+                            <p class="text-white font-serif font-bold text-2xl sm:text-3xl">200+</p>
+                            <p class="text-white/60 text-xs mt-1">Reviews</p>
+                        </div>
+                        <div class="bg-white/10 rounded-2xl p-5 text-center backdrop-blur-sm border border-white/10">
+                            <p class="text-white font-serif font-bold text-2xl sm:text-3xl">98%</p>
+                            <p class="text-white/60 text-xs mt-1">Recommend Us</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION BANNER -->
+    <section class="py-24 md:py-32 bg-[#fef8ee]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="relative rounded-3xl overflow-hidden shadow-2xl min-h-[420px] flex items-center">
+                <!-- Background Image -->
+                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80&w=1200');"></div>
+                <!-- Gradient Overlay -->
+                <div class="absolute inset-0 bg-gradient-to-r from-[#111111]/95 via-[#111111]/80 to-transparent"></div>
+
+                <div class="relative z-10 p-10 sm:p-16 max-w-2xl space-y-6">
+                    <span class="text-[#f5d08a] text-xs font-bold tracking-widest uppercase block">Enrolment Open — 2025/2026 Academic Year</span>
+                    <h2 class="font-serif text-4xl sm:text-5xl font-bold text-white leading-tight">
+                        Give Your Child <br>
+                        <span class="text-[#f5d08a]">The Best Start</span>
+                    </h2>
+                    <p class="text-white/80 text-base leading-relaxed">
+                        Spaces are limited. Register your child today and join the El's Academy family — where bright futures are built one curious mind at a time.
+                    </p>
+
+                    <div class="flex flex-wrap items-center gap-4 pt-4">
+                        <a href="#contact" class="px-8 py-4 bg-[#c8923a] hover:bg-[#b07a2e] text-white font-semibold rounded-full shadow-lg transition-colors inline-flex items-center gap-2 cursor-pointer text-sm">
+                            Apply Now <i class="ri-arrow-right-line"></i>
+                        </a>
+                        <a href="tel:+233240000000" class="px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-full border border-white/30 transition-colors inline-flex items-center gap-2 cursor-pointer text-sm backdrop-blur-sm">
+                            <i class="ri-phone-line"></i> Call Us Today
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER & CONTACT SECTION -->
+    <footer id="contact" class="bg-[#111111] pt-24 pb-12 text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <!-- Top Grid: Info & Form -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 mb-20">
+                
+                <!-- Info Column -->
+                <div class="lg:col-span-5 space-y-8">
+                    <!-- Logo -->
+                    <div class="flex items-center gap-3">
+                        <div class="w-11 h-11 rounded-full bg-[#1a5c38] flex items-center justify-center shadow-md">
+                            <span class="text-white font-serif font-bold text-xl">E</span>
+                        </div>
+                        <div>
+                            <h3 class="font-serif font-bold text-xl leading-none">El's Academy</h3>
+                            <p class="text-[#c8923a] text-xs font-semibold mt-1">Nurturing Tomorrow's Leaders</p>
+                        </div>
+                    </div>
+
+                    <p class="text-gray-400 text-sm leading-relaxed max-w-sm">
+                        El's Academy is committed to providing an excellent, holistic foundational education for every child in Ghana — rooted in culture, driven by excellence.
+                    </p>
+
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-[#1a5c38]/20 text-[#1a5c38] flex items-center justify-center flex-shrink-0">
+                                <i class="ri-map-pin-line text-lg"></i>
+                            </div>
+                            <span class="text-gray-300 text-sm font-medium">El's Academy, Accra, Ghana</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-[#1a5c38]/20 text-[#1a5c38] flex items-center justify-center flex-shrink-0">
+                                <i class="ri-phone-line text-lg"></i>
+                            </div>
+                            <span class="text-gray-300 text-sm font-medium">+233 24 000 0000</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-[#1a5c38]/20 text-[#1a5c38] flex items-center justify-center flex-shrink-0">
+                                <i class="ri-mail-line text-lg"></i>
+                            </div>
+                            <span class="text-gray-300 text-sm font-medium">info@elsacademy.edu.gh</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-[#1a5c38]/20 text-[#1a5c38] flex items-center justify-center flex-shrink-0">
+                                <i class="ri-time-line text-lg"></i>
+                            </div>
+                            <span class="text-gray-300 text-sm font-medium">Mon – Fri: 7:00am – 4:00pm</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-3 pt-4">
+                        <a href="#contact" class="w-10 h-10 rounded-full bg-white/10 hover:bg-[#c8923a] flex items-center justify-center text-white transition-colors"><i class="ri-facebook-fill text-lg"></i></a>
+                        <a href="#contact" class="w-10 h-10 rounded-full bg-white/10 hover:bg-[#c8923a] flex items-center justify-center text-white transition-colors"><i class="ri-instagram-line text-lg"></i></a>
+                        <a href="#contact" class="w-10 h-10 rounded-full bg-white/10 hover:bg-[#c8923a] flex items-center justify-center text-white transition-colors"><i class="ri-twitter-x-fill text-lg"></i></a>
+                        <a href="#contact" class="w-10 h-10 rounded-full bg-white/10 hover:bg-[#c8923a] flex items-center justify-center text-white transition-colors"><i class="ri-youtube-fill text-lg"></i></a>
+                    </div>
+                </div>
+
+                <!-- Contact Form Column -->
+                <div class="lg:col-span-7 bg-[#1c1c1c] rounded-3xl p-8 sm:p-12 border border-white/10 shadow-2xl relative">
+                    <span class="text-[#c8923a] text-xs font-bold tracking-widest uppercase block mb-2">Get in Touch</span>
+                    <h3 class="font-serif text-2xl sm:text-3xl font-bold text-white mb-8">Send Us a Message</h3>
+
+                    <!-- Success State View (Hidden initially) -->
+                    <div id="form-success" class="hidden bg-[#1a5c38]/20 border border-[#1a5c38]/50 rounded-2xl p-8 text-center space-y-4 animate-fadeIn">
+                        <div class="w-16 h-16 bg-[#1a5c38] rounded-full flex items-center justify-center mx-auto text-white text-3xl shadow-lg">
+                            <i class="ri-check-line"></i>
+                        </div>
+                        <h4 class="font-serif font-bold text-xl text-white">Message Received Successfully!</h4>
+                        <p class="text-gray-400 text-sm max-w-sm mx-auto leading-relaxed">
+                            Thank you for reaching out to El's Academy. Our admissions officer will review your enquiry and contact you within 24 hours.
+                        </p>
+                        <button id="send-another-btn" class="mt-4 px-6 py-2.5 bg-[#c8923a] hover:bg-[#b07a2e] text-white font-semibold rounded-full text-sm transition-colors cursor-pointer">
+                            Send Another Message
+                        </button>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <form id="contact-form" class="space-y-6">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs text-gray-400 font-medium mb-2">Full Name *</label>
+                                <input type="text" id="form-name" required placeholder="Your full name" class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3.5 text-white text-sm focus:outline-none focus:border-[#c8923a] transition-colors placeholder:text-gray-600">
+                            </div>
+                            <div>
+                                <label class="block text-xs text-gray-400 font-medium mb-2">Email Address *</label>
+                                <input type="email" id="form-email" required placeholder="your@email.com" class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3.5 text-white text-sm focus:outline-none focus:border-[#c8923a] transition-colors placeholder:text-gray-600">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs text-gray-400 font-medium mb-2">Phone Number</label>
+                                <input type="tel" id="form-phone" placeholder="+233 00 000 0000" class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3.5 text-white text-sm focus:outline-none focus:border-[#c8923a] transition-colors placeholder:text-gray-600">
+                            </div>
+                            <div>
+                                <label class="block text-xs text-gray-400 font-medium mb-2">Subject</label>
+                                <select id="form-subject" class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-[#c8923a] transition-colors">
+                                    <option value="" class="bg-[#222]">Select enquiry subject</option>
+                                    <option value="Enrolment Enquiry" class="bg-[#222]">Enrolment Enquiry</option>
+                                    <option value="Fee Structure" class="bg-[#222]">Fee Structure</option>
+                                    <option value="School Visit" class="bg-[#222]">School Visit</option>
+                                    <option value="Staffing / Careers" class="bg-[#222]">Staffing / Careers</option>
+                                    <option value="General Enquiry" class="bg-[#222]">General Enquiry</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <label class="block text-xs text-gray-400 font-medium">Message *</label>
+                                <span id="char-count" class="text-xs text-gray-600">0 / 500</span>
+                            </div>
+                            <textarea id="form-message" rows="4" maxlength="500" required placeholder="Tell us about your child, or ask us anything..." class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3.5 text-white text-sm focus:outline-none focus:border-[#c8923a] transition-colors resize-none placeholder:text-gray-600"></textarea>
+                        </div>
+
+                        <!-- Error Message Display -->
+                        <div id="form-error" class="hidden text-red-400 text-xs font-semibold py-1"></div>
+
+                        <button type="submit" id="submit-btn" class="w-full py-4 bg-[#c8923a] hover:bg-[#b07a2e] text-white font-bold rounded-xl text-sm transition-colors cursor-pointer shadow-lg shadow-[#c8923a]/20 flex items-center justify-center gap-2">
+                            <span>Send Message</span> <i class="ri-send-plane-line text-lg"></i>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+
+            <!-- Bottom Links Grid -->
+            <div class="border-t border-white/10 pt-12 mb-12 grid grid-cols-2 md:grid-cols-4 gap-8 text-sm">
+                <div>
+                    <h5 class="text-white font-bold text-xs uppercase tracking-widest mb-4 font-serif">Quick Links</h5>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#home" class="hover:text-[#c8923a] transition-colors">Home</a></li>
+                        <li><a href="#about" class="hover:text-[#c8923a] transition-colors">About Us</a></li>
+                        <li><a href="#programs" class="hover:text-[#c8923a] transition-colors">Our Programmes</a></li>
+                        <li><a href="#teachers" class="hover:text-[#c8923a] transition-colors">Meet Our Teachers</a></li>
+                        <li><a href="#gallery" class="hover:text-[#c8923a] transition-colors">School Gallery</a></li>
+                        <li><a href="#contact" class="hover:text-[#c8923a] transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-white font-bold text-xs uppercase tracking-widest mb-4 font-serif">Programmes</h5>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#programs" class="hover:text-[#c8923a] transition-colors">Creche & Nursery</a></li>
+                        <li><a href="#programs" class="hover:text-[#c8923a] transition-colors">Kindergarten</a></li>
+                        <li><a href="#programs" class="hover:text-[#c8923a] transition-colors">Lower Primary</a></li>
+                        <li><a href="#programs" class="hover:text-[#c8923a] transition-colors">Upper Primary</a></li>
+                        <li><a href="#programs" class="hover:text-[#c8923a] transition-colors">Sports & Arts</a></li>
+                        <li><a href="#programs" class="hover:text-[#c8923a] transition-colors">After-School Care</a></li>
+                    </ul>
+                </div>
+                <div class="col-span-2 md:col-span-2">
+                    <h5 class="text-white font-bold text-xs uppercase tracking-widest mb-4 font-serif">School Operating Hours</h5>
+                    <div class="space-y-3 text-gray-400 max-w-sm">
+                        <div class="flex justify-between border-b border-white/10 pb-2">
+                            <span>Monday – Friday</span>
+                            <span class="text-white font-medium">7:00am – 4:00pm</span>
+                        </div>
+                        <div class="flex justify-between border-b border-white/10 pb-2">
+                            <span>Saturday (Clubs & Activities)</span>
+                            <span class="text-white font-medium">8:00am – 12:00pm</span>
+                        </div>
+                        <div class="flex justify-between pb-2">
+                            <span>Sunday</span>
+                            <span class="text-red-400 font-medium">Closed</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright Footer -->
+            <div class="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500">
+                <p>© <span id="year">2026</span> El's Academy, Accra, Ghana. All rights reserved.</p>
+                <p>Nurturing Tomorrow's Leaders — Rooted in Culture, Driven by Excellence.</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE JAVASCRIPT FUNCTIONALITY -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Set dynamic year
+            document.getElementById('year').innerText = new Date().getFullYear();
+
+            // Mobile Menu Toggle
+            const mobileMenuBtn = document.getElementById('mobile-menu-toggle');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                const isHidden = mobileMenu.classList.contains('hidden');
+                mobileMenuBtn.innerHTML = isHidden ? '<i class="ri-menu-line text-2xl"></i>' : '<i class="ri-close-line text-2xl"></i>';
+            });
+
+            // Close mobile menu when clicking nav links
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenuBtn.innerHTML = '<i class="ri-menu-line text-2xl"></i>';
+                });
+            });
+
+            // Testimonials Data
+            const testimonials = [
+                {
+                    name: 'Akosua Boateng',
+                    role: 'Parent of Kwame, Class 4',
+                    initials: 'AB',
+                    quote: 'El\'s Academy has completely transformed my son. He came in shy and unsure of himself, and now he stands up in front of the whole school and speaks with such confidence. The teachers here genuinely care about every single child.'
+                },
+                {
+                    name: 'Emmanuel Adjei',
+                    role: 'Parent of Adwoa, Kindergarten',
+                    initials: 'EA',
+                    quote: 'From the moment we walked through the gates, we felt the warmth of this school. My daughter cries when she has to leave! The mix of academics and culture they teach is exactly what we wanted for our child.'
+                },
+                {
+                    name: 'Yaa Asante-Mensah',
+                    role: 'Parent of Kofi & Ama, Classes 1 & 3',
+                    initials: 'YA',
+                    quote: 'Both my children attend El\'s Academy and the difference is remarkable. The teachers know every child by name and go out of their way to make sure no child is left behind. Best school in the area without a doubt.'
+                },
+                {
+                    name: 'Kofi Darko',
+                    role: 'Parent of Nana, Class 6',
+                    initials: 'KD',
+                    quote: 'My daughter passed her BECE prep exams with flying colours. The Upper Primary teachers are exceptional — rigorous but encouraging. El\'s Academy didn\'t just teach her subjects; they taught her how to think.'
+                },
+                {
+                    name: 'Abena Frimpong',
+                    role: 'Former Student (Now University)',
+                    initials: 'AF',
+                    quote: 'I am now studying at University of Ghana and I credit everything to the strong foundation I got at El\'s Academy. Mrs. Mensah always believed in me before I believed in myself. This school changes lives.'
+                }
+            ];
+
+            let currentTestiIndex = 0;
+            const quoteEl = document.getElementById('testi-quote');
+            const avatarEl = document.getElementById('testi-avatar');
+            const nameEl = document.getElementById('testi-name');
+            const roleEl = document.getElementById('testi-role');
+            const dots = document.querySelectorAll('.testi-dot');
+
+            function updateTestimonial(index) {
+                const item = testimonials[index];
+                
+                // Fade effect
+                quoteEl.style.opacity = 0;
+                setTimeout(() => {
+                    quoteEl.innerText = `“${item.quote}”`;
+                    avatarEl.innerText = item.initials;
+                    nameEl.innerText = item.name;
+                    roleEl.innerText = item.role;
+                    quoteEl.style.opacity = 1;
+                }, 200);
+
+                dots.forEach((dot, idx) => {
+                    if (idx === index) {
+                        dot.className = 'testi-dot active w-8 h-2.5 bg-[#c8923a] rounded-full transition-all duration-300 cursor-pointer';
+                    } else {
+                        dot.className = 'testi-dot w-2.5 h-2.5 bg-white/30 hover:bg-white/60 rounded-full transition-all duration-300 cursor-pointer';
+                    }
+                });
+            }
+
+            // Auto timer for testimonials
+            let testiTimer = setInterval(() => {
+                currentTestiIndex = (currentTestiIndex + 1) % testimonials.length;
+                updateTestimonial(currentTestiIndex);
+            }, 6000);
+
+            function resetTimer() {
+                clearInterval(testiTimer);
+                testiTimer = setInterval(() => {
+                    currentTestiIndex = (currentTestiIndex + 1) % testimonials.length;
+                    updateTestimonial(currentTestiIndex);
+                }, 6000);
+            }
+
+            document.getElementById('testi-next').addEventListener('click', () => {
+                currentTestiIndex = (currentTestiIndex + 1) % testimonials.length;
+                updateTestimonial(currentTestiIndex);
+                resetTimer();
+            });
+
+            document.getElementById('testi-prev').addEventListener('click', () => {
+                currentTestiIndex = (currentTestiIndex - 1 + testimonials.length) % testimonials.length;
+                updateTestimonial(currentTestiIndex);
+                resetTimer();
+            });
+
+            dots.forEach(dot => {
+                dot.addEventListener('click', (e) => {
+                    currentTestiIndex = parseInt(e.target.getAttribute('data-index'));
+                    updateTestimonial(currentTestiIndex);
+                    resetTimer();
+                });
+            });
+
+
+            // Gallery Filtering
+            const filterBtns = document.querySelectorAll('.gallery-filter-btn');
+            const galleryCards = document.querySelectorAll('.gallery-card');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterBtns.forEach(b => b.className = 'gallery-filter-btn px-5 py-2 rounded-full text-xs font-semibold transition-all duration-200 bg-white text-gray-600 hover:bg-gray-100 shadow-sm cursor-pointer');
+                    btn.className = 'gallery-filter-btn active px-5 py-2 rounded-full text-xs font-semibold transition-all duration-200 bg-[#1a5c38] text-white cursor-pointer';
+
+                    const category = btn.getAttribute('data-category');
+                    galleryCards.forEach(card => {
+                        if (category === 'all' || card.getAttribute('data-category') === category) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // Lightbox Modal
+            const lightboxModal = document.getElementById('lightbox-modal');
+            const lightboxImg = document.getElementById('lightbox-img');
+            const lightboxClose = document.getElementById('lightbox-close');
+
+            galleryCards.forEach(card => {
+                card.addEventListener('click', () => {
+                    const imgSrc = card.querySelector('img').getAttribute('src');
+                    lightboxImg.setAttribute('src', imgSrc);
+                    lightboxModal.style.display = 'flex';
+                });
+            });
+
+            lightboxClose.addEventListener('click', () => {
+                lightboxModal.style.display = 'none';
+            });
+
+            lightboxModal.addEventListener('click', (e) => {
+                if (e.target === lightboxModal) {
+                    lightboxModal.style.display = 'none';
+                }
+            });
+
+            // Contact Form Submission & Validation
+            const form = document.getElementById('contact-form');
+            const formMsg = document.getElementById('form-message');
+            const charCount = document.getElementById('char-count');
+            const formError = document.getElementById('form-error');
+            const formSuccess = document.getElementById('form-success');
+            const submitBtn = document.getElementById('submit-btn');
+            const sendAnotherBtn = document.getElementById('send-another-btn');
+
+            formMsg.addEventListener('input', () => {
+                const len = formMsg.value.length;
+                charCount.innerText = `${len} / 500`;
+                if (len >= 500) {
+                    charCount.classList.add('text-red-400');
+                } else {
+                    charCount.classList.remove('text-red-400');
+                }
+            });
+
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                formError.classList.add('hidden');
+
+                const name = document.getElementById('form-name').value.trim();
+                const email = document.getElementById('form-email').value.trim();
+                const message = formMsg.value.trim();
+
+                if (!name || !email || !message) {
+                    formError.innerText = 'Please fill in all required fields.';
+                    formError.classList.remove('hidden');
+                    return;
+                }
+
+                if (message.length > 500) {
+                    formError.innerText = 'Message cannot exceed 500 characters.';
+                    formError.classList.remove('hidden');
+                    return;
+                }
+
+                // Simulate submission
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = '<i class="ri-loader-4-line animate-spin text-lg"></i> Sending...';
+
+                setTimeout(() => {
+                    form.classList.add('hidden');
+                    formSuccess.classList.remove('hidden');
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = '<span>Send Message</span> <i class="ri-send-plane-line text-lg"></i>';
+                }, 1200);
+            });
+
+            sendAnotherBtn.addEventListener('click', () => {
+                form.reset();
+                charCount.innerText = '0 / 500';
+                formSuccess.classList.add('hidden');
+                form.classList.remove('hidden');
+            });
+
+        });
+    </script>
+</body>
+</html>
